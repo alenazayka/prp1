@@ -26,6 +26,10 @@ public class User{
     @Column(name = "role")
     private String role;
 
+    public  User(){
+
+    }
+
     public User(int id, String name, int age) {
         this.name = name;
         this.age = age;

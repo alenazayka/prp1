@@ -16,7 +16,7 @@ import java.util.List;
 
 public class UserHibernateDAO implements UserDAO {
     private Session session;
-    private DBHelper dbHelper;
+    private DBHelper dbHelper = DBHelper.getInstance();
     private SessionFactory sessionFactory;
     private static volatile UserHibernateDAO INSTANCE;
 
